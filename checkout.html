@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
     />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Men's Jackets | Rainy Days</title>
+    <title>Home | Rainy Days</title>
     <meta
       name="description"
       content="Shop rain jackets suited for all kinds of adventures"
@@ -18,29 +18,30 @@
     <header>
       <a href="index.html">
         <img
+          class="logo"
           src="images/RainyDays_Logo.png"
           alt="rainy days logo"
-          width="163px"
-          height="87px"
         />
       </a>
-      <!-- top navigation-->
-      <ul class="">
-        <li><img src="images/icons/like.png" /></li>
-        <li><img src="images/icons/profile.png" /></li>
-        <li><img src="images/icons/cart.png" /></li>
-        <li><img src="images/icons/search.png" /></li>
-      </ul>
+      <!-- top navigation / shortcut icons-->
+      <div class="topnav">
+        <div class="favorites item"><img src="images/icons/like.png" /></div>
+        <div class="profile item"><img src="images/icons/profile.png" /></div>
+        <div class="cart item"><img src="images/icons/cart.png" href="checkout.html"/></div>
+        <div class="search item"><img src="images/icons/search.png" /></div>
+      </div>
+    </header>
       <!-- side navigation -->
       <nav role="navigation" aria-label="main menu">
         <ul class="navbar">
-          <li><a href="index.html">home</a></li>
+          <li><a href="index.html" class="active">home</a></li>
           <li>womens</li>
-          <li><a href="mens.html" class="active">mens</a></li>
+          <li><a href="mens.html">mens</a></li>
           <li>outlet</li>
-          <li>new in</li>
+          <li>new in</li> <hr align="left">
           <li><a href="about.html">about</a></li>
           <li><a href="contact.html">contact</a></li>
+          <hr align="left">
           <li>
             <a target="_blank" href="https://facebook.com"
               ><img src="images/icons/icon-face.png"
@@ -54,7 +55,10 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <!-- main content-->
+    <main>
+
+    </main>
   </body>
   <footer>&copy; Rainy Days</footer>
 </html>

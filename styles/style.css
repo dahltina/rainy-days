@@ -1,4 +1,147 @@
+@font-face {
+  font-family: "inter", "neue-haas-unica" sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+  src: url("https://use.typekit.net/gzy8fgh.css");
+}
+
 body {
-  background-color: rgb(230, 204, 255);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "inter", "helvetica", sans-serif;
+  font-size: 1rem;
+}
+
+.line {
+  width: 100%;
+  height: 13px;
+  background-color: #0a3641;
+}
+
+.logo {
+  height: 87px;
+  width: 163px;
+}
+
+.topnav {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10%;
+}
+
+nav ul {
+  padding-left: 0px;
+}
+
+nav a {
+  color: #0a3641;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ee9c47;
+}
+
+.navbar {
+  color: #0a3641;
+  font-family: "Inter", helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.active {
+  color: #ee9c47;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  width: 7.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+.btn-large {
+  display: inline-block;
+  border-radius: 1.5rem;
+  background: #ee9c47;
+  color: #ffffff;
+  padding: 0.6rem 3rem;
+  border: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+svg .icon:hover {
+  color: #ee9c47;
+}
+
+hr {
+  width: 72px;
+  height: 2px;
+  color: #e2e2eb;
+}
+
+h1,
+h2,
+h3 {
+  color: #0a3641;
+  font-family: "neue-haas-unica", "helvetica", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.375rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5625rem;
+  text-transform: none;
+}
+
+.large {
+  width: 1088px;
+  height: 456px;
+}
+
+.medium {
+  width: 536px;
+  height: 279px;
+}
+
+.small {
+  width: 343px;
+  height: 343px;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-auto-columns: auto;
+  justify-items: center;
+  margin-top: 20px;
+  margin-left: 280px;
+  margin-right: 280px;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  grid-auto-columns: minmax(171px, auto);
+  justify-items: center;
+  margin-top: 20px;
+  margin-left: 280px;
+  margin-right: 280px;
 }

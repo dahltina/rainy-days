@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <link rel="stylesheet" href="https://use.typekit.net/gzy8fgh.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Home | Rainy Days</title>
     <meta
       name="description"
@@ -10,42 +16,142 @@
   </head>
   <body>
     <header>
+      <hr class="line">
       <a href="index.html">
         <img
+          class="logo"
           src="images/RainyDays_Logo.png"
           alt="rainy days logo"
-          width="163px"
-          height="87px"
         />
       </a>
-      <!-- top navigation-->
-      <ul class="">
-        <li><img src="images/icons/like.png" /></li>
-        <li><img src="images/icons/profile.png" /></li>
-        <li><img src="images/icons/cart.png" /></li>
-        <li><img src="images/icons/search.png" /></li>
-      </ul>
+      <!-- top navigation / shortcut icons-->
+      <div class="topnav">
+        <div class="favorites item"><img src="images/icons/like.png" /></div>
+        <div class="profile item"><img src="images/icons/profile.png" /></div>
+        <div class="cart item"><img src="images/icons/cart.png" href="checkout.html"/></div>
+        <div class="search item"><img src="images/icons/search.png" /></div>
+      </div>
+    </header>
       <!-- side navigation -->
-      <nav role="navigation" aria-label="main menu">
-        <ul class="navbar">
-          <li><a href="index.html">home</a></li>
-          <li>womens</li>
-          <li><a href="mens.html">mens</a></li>
-          <li>outlet</li>
-          <li>new in</li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="contact.html">contact</a></li>
+        <nav role="navigation" aria-label="main menu">
+           <ul class="navbar">
+              <li><a href="index.html" class="active">home</a></li>
+              <li>womens</li>
+               <li><a href="mens.html">mens</a></li>
+               <li>outlet</li>
+               <li>new in</li> <hr align="left">
+               <li><a href="about.html">about</a></li>
+               <li><a href="contact.html">contact</a></li>
+               <hr align="left">
+                <li>
+                <a target="_blank" href="https://facebook.com"
+              ><img src="images/icons/face.svg" class="icon"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://instagram.com">
+              <img src="images/icons/insta.svg" class="icon"
+            /></a>
+          </li>
         </ul>
       </nav>
     </header>
+    <!-- main content-->
     <main>
       <h1>Find your next rain jacket for any adventure</h1>
-      <img src="images/shop-womens.jpg" alt="shop womens" />
-      <img src="images/shop-mens.jpg" alt="shop mens" />
+      <div class="container-1">
+        <div>
+      <img src="images/shop-womens.jpg" class="img medium" alt="shop womens" />
+      <button class="btn-large">Shop Womens</button>
+    </div>
+    <div>
+      <img src="images/shop-mens.jpg" class="img medium" alt="shop mens" href="mens.html" />
+      <a href="mens.html">
+        <button class="btn-large">Shop Mens</button>
+      </a>
+    </div>
+    </div>
       <h2>Explore our new collection</h2>
-      <img src="images/explore.jpg" alt="explore our new collection" />
+      <img class="img large" src="images/explore.jpg" alt="explore our new collection" />
+  
+      <!--featured items-->
       <h2>Featured items</h2>
+      <div class="container-2">
+        <div>
+            <img src="images/jacket-amuse.jpg" alt="amuse jacket" class="img small">
+            <h3>Amuse Jacket</h3>
+            <img src="images/icons/like.svg" alt="add to favorites">
+            <img src="images/buttons/rating.svg" alt="rating">
+            <img src="images/buttons/colors.svg" alt="available colors">
+           USD 78
+        </div>
+        <div>
+          <img src="images/jacket-elements.jpg" alt="elements jacket" class="img small">
+          <h3>Elements Jacket</h3>
+          <img src="images/icons/like.svg" alt="add to favorites">
+          <img src="images/buttons/rating2.svg" alt="rating">
+          <img src="images/buttons/colors3.svg" alt="available colors">
+          USD 49 <s>USD 69</s>
+        </div>
+        <div>
+          <img src="images/jacket-edge.jpg" alt="edge jacket" class="img small">
+          <h3>Edge Jacket</h3>
+          <img src="images/icons/like.svg" alt="add to favorites">
+          <img src="images/buttons/rating-edge.svg" alt="rating">
+          <img src="images/buttons/colors.svg" alt="available colors">
+          USD 58
+        </div>
+        <div>
+          <img src="images/jacket-voss.jpg" alt="voss jacket" class="img small">
+          <h3>Voss Jacket</h3>
+          <img src="images/icons/like.svg" alt="add to favorites">
+          <img src="images/buttons/rating2.svg" alt="rating">
+          <img src="images/buttons/colors3.svg" alt="available colors">
+          USD 59 
+        </div>
+        <div>
+          <img src="images/jacket-explore.jpg" alt="explore jacket" class="img small">
+          <h3>Explore Jacket</h3>
+          <img src="images/icons/like.svg" alt="add to favorites">
+          <img src="images/buttons/rating.svg" alt="rating">
+          <img src="images/buttons/colors3.svg" alt="available colors">
+          USD 68 
+        </div>
+        <div>
+          <img src="images/jacket-forest.jpg" alt="forest jacket" class="img small">
+          <h3>Forest Jacket</h3>
+          <img src="images/icons/like.svg" alt="add to favorites">
+          <img src="images/buttons/rating2.svg" alt="rating">
+          <img src="images/buttons/colors-forest.svg" alt="available colors">
+          USD 54 
+        </div>
+        <div>
+          <img src="images/jacket-edge2.jpg" alt="edge jacket" class="img small">
+          <h3>Edge Jacket</h3>
+          <img src="images/icons/like.svg" alt="add to favorites">
+          <img src="images/buttons/rating2.svg" alt="rating">
+          <img src="images/buttons/colors-voss.svg" alt="available colors">
+          USD 64 
+        </div>
+        <div>
+          <img src="images/jacket-voss2.jpg" alt="voss jacket" class="img small">
+          <h3>Voss Jacket</h3>
+          <img src="images/icons/like.svg" alt="add to favorites">
+          <img src="images/buttons/rating-edge.svg" alt="rating">
+          <img src="images/buttons/colors2.svg" alt="available colors">
+          USD 54 
+        </div>
+        <div>
+        <img src="images/jacket-forest2.jpg" alt="forest jacket" class="img small">
+        <h3>Forest Jacket</h3>
+        <img src="images/icons/like.svg" alt="add to favorites">
+          <img src="images/buttons/rating2.svg" alt="rating">
+          <img src="images/buttons/colors-voss.svg" alt="available colors">
+          USD 59 
+      </div>
+      </div>
+      <!--end featured items-->
     </main>
   </body>
-  <footer>Copyright &copy;</footer>
+  <footer>&copy; 2020 Rainy Days </footer>
 </html>
