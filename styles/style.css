@@ -7,6 +7,7 @@
 body {
   font-family: "inter", "helvetica", sans-serif;
   font-size: 1rem;
+  margin: 0;
 }
 
 .line {
@@ -16,20 +17,29 @@ body {
 }
 
 .logo {
-  height: 87px;
-  width: 163px;
+  max-height: 87px;
+  max-width: 163px;
+  padding: 0;
+  margin: 77px 1479px 77px 279px;
 }
 
+/* top icons shortcuts*/
 .topnav {
   float: right;
-  display: flex;
+  margin-right: 279px;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 10%;
+  width: 5%;
 }
 
+/*navigation*/
 nav ul {
   padding-left: 0px;
+}
+
+nav li {
+  padding: 10px;
 }
 
 nav a {
@@ -50,6 +60,10 @@ nav a:hover {
 }
 .active {
   color: #ee9c47;
+}
+
+.social {
+  margin: 10px;
 }
 
 .item {
@@ -75,10 +89,6 @@ nav a:hover {
   font-size: 1rem;
 }
 
-svg .icon:hover {
-  color: #ee9c47;
-}
-
 hr {
   width: 72px;
   height: 2px;
@@ -102,6 +112,7 @@ h1 {
 
 h2 {
   font-size: 1.875rem;
+  margin-left: 279px;
 }
 
 h3 {
@@ -110,18 +121,18 @@ h3 {
 }
 
 .large {
-  width: 1088px;
-  height: 456px;
+  max-width: 1088px;
+  max-height: 456px;
 }
 
 .medium {
-  width: 536px;
-  height: 279px;
+  max-width: 536px;
+  max-height: 279px;
 }
 
 .small {
-  width: 343px;
-  height: 343px;
+  max-width: 343px;
+  max-height: 343px;
 }
 
 .container-1 {
@@ -136,6 +147,13 @@ h3 {
 }
 
 .container-2 {
+  display: inline-block;
+  margin-left: 279px;
+  padding: none;
+  border: none;
+}
+
+.container-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
@@ -144,4 +162,11 @@ h3 {
   margin-top: 20px;
   margin-left: 280px;
   margin-right: 280px;
+}
+
+/*footer*/
+footer {
+  background-color: #e2e2eb76;
+  padding: 30px 279px;
+  margin-top: 190px;
 }
