@@ -6,99 +6,12 @@
 
 body {
   font-family: "inter", "helvetica", sans-serif;
-  font-size: 1rem;
-  margin: 0;
-}
-
-.line {
-  width: 100%;
-  height: 13px;
-  background-color: #0a3641;
-}
-
-.logo {
-  max-height: 87px;
-  max-width: 163px;
-  padding: 0;
-  margin: 77px 1479px 77px 279px;
-}
-
-/* top icons shortcuts*/
-.topnav {
-  float: right;
-  margin-right: 279px;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 5%;
-}
-
-/*navigation*/
-nav ul {
-  padding-left: 0px;
-}
-
-nav li {
-  padding: 10px;
-}
-
-nav a {
   color: #0a3641;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #ee9c47;
-}
-
-.navbar {
-  color: #0a3641;
-  font-family: "Inter", helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-}
-.active {
-  color: #ee9c47;
-}
-
-.social {
-  margin: 10px;
-}
-
-.item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5rem;
-  width: 7.5rem;
-  height: 2.5rem;
-  margin: 1rem;
-}
-
-.btn-large {
-  display: inline-block;
-  border-radius: 1.5rem;
-  background: #ee9c47;
-  color: #ffffff;
-  padding: 0.6rem 3rem;
-  border: 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-hr {
-  width: 72px;
-  height: 2px;
-  color: #e2e2eb;
 }
 
 h1,
 h2,
 h3 {
-  color: #0a3641;
   font-family: "neue-haas-unica", "helvetica", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -107,7 +20,7 @@ h3 {
 
 h1 {
   font-size: 2.375rem;
-  text-align: center;
+  margin-left: 279px;
 }
 
 h2 {
@@ -120,6 +33,108 @@ h3 {
   text-transform: none;
 }
 
+p {
+  font-size: 1rem;
+}
+
+/*---------header------------------
+----------------------------------*/
+
+.logo {
+  display: inline;
+  max-width: 163px;
+  padding: 0;
+  margin-top: 77px;
+  margin-right: auto;
+  margin-bottom: 77px;
+  margin-left: 279px;
+}
+
+/*top icons navigation*/
+.topnav {
+  float: right;
+  margin-top: 77px;
+  margin-right: 279px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 5%;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  width: 7.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+.social {
+  margin: 10px;
+}
+
+/*---------navigation-----------
+------------------------------*/
+
+nav ul {
+  padding-left: 0px;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav {
+  display: inline;
+}
+
+nav a {
+  color: #0a3641;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ee9c47;
+}
+
+.navbar {
+  float: left;
+  color: #0a3641;
+  font-family: "Inter", helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.active {
+  color: #ee9c47;
+}
+
+hr {
+  width: 72px;
+  height: 2px;
+  color: #e2e2eb;
+}
+
+/*------buttons-----------
+-------------------------*/
+
+.btn-large {
+  display: inline-block;
+  border-radius: 1.5rem;
+  background: #ee9c47;
+  color: #ffffff;
+  padding: 0.6rem 3rem;
+  border: 0;
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/*--------images-----------
+--------------------------*/
 .large {
   max-width: 1088px;
   max-height: 456px;
@@ -135,10 +150,14 @@ h3 {
   max-height: 343px;
 }
 
+/*-------index main layout-----------
+------------------------------------*/
+
+/*FIND YOUR NEXT RAIN JACKET*/
 .container-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 16px;
   grid-auto-columns: auto;
   justify-items: center;
   margin-top: 20px;
@@ -146,6 +165,7 @@ h3 {
   margin-right: 280px;
 }
 
+/*EPLORE OUR NEW COLLECTION*/
 .container-2 {
   display: inline-block;
   margin-left: 279px;
@@ -153,10 +173,11 @@ h3 {
   border: none;
 }
 
+/*FEATURED ITEMS*/
 .container-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 29px;
   grid-auto-columns: minmax(171px, auto);
   justify-items: center;
   margin-top: 20px;
@@ -164,7 +185,45 @@ h3 {
   margin-right: 280px;
 }
 
-/*footer*/
+.like-icon {
+  float: right;
+  margin-top: 30px;
+}
+
+.rating,
+.colors,
+.price {
+  padding-bottom: 5px;
+  margin-left: 5px;
+}
+
+/* ???????? */
+.price.dropped {
+  color: #ee9c47;
+}
+
+.jacket-title,
+.like-icon {
+  display: inline-block;
+}
+
+s {
+  color: #969696;
+}
+
+.box-1 {
+  position: relative;
+}
+
+.sale,
+.new {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/*------------footer------------------
+-------------------------------------*/
 footer {
   background-color: #e2e2eb76;
   padding: 30px 279px;
