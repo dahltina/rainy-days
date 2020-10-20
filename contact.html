@@ -1,72 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="https://use.typekit.net/gzy8fgh.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
     />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Contact | Rainy Days</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <title>Home | Rainy Days</title>
     <meta
       name="description"
       content="Shop rain jackets suited for all kinds of adventures"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+  <!-------------------------------------- header --------------------------------------------->
   <body>
     <header>
       <a href="index.html">
         <img
+          class="logo"
           src="images/RainyDays_Logo.png"
           alt="rainy days logo"
-          width="163px"
-          height="87px"
         />
       </a>
-      <!-- top navigation-->
-      <ul class="">
-        <li><img src="images/icons/like.png" /></li>
-        <li><img src="images/icons/profile.png" /></li>
-        <li><img src="images/icons/cart.png" /></li>
-        <li><img src="images/icons/search.png" /></li>
-      </ul>
-      <!-- side navigation -->
-      <nav role="navigation" aria-label="main menu">
-        <ul class="navbar">
-          <li><a href="index.html">home</a></li>
-          <li>womens</li>
-          <li><a href="mens.html">mens</a></li>
-          <li>outlet</li>
-          <li>new in</li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="contact.html" class="active">contact</a></li>
-          <li>
-            <a target="_blank" href="https://facebook.com"
-              ><img src="images/icons/icon-face.png"
-            /></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://instagram.com">
-              <img src="images/icons/icon-insta.png"
-            /></a>
-          </li>
+      <!----------------------- top navigation / shortcut icons -------------------------------->
+      <div class="topnav">
+        <div class="favorites item"><img src="images/icons/like.png" /></div>
+        <div class="profile item"><img src="images/icons/profile.png" /></div>
+        <div class="cart item"><img src="images/icons/cart.png" href="checkout.html"/></div>
+        <div class="search item"><img src="images/icons/search.png" /></div>
+      </div>
+    </header>
+      <!------------------------------- side navigation ------------------------------------------->
+        <nav role="navigation" aria-label="main menu">
+           <ul class="navbar">
+              <li><a href="index.html">home</a></li>
+              <li><a href="womens.html"">womens</li>
+               <li><a href="mens.html">mens</a></li>
+               <li>outlet</li>
+               <li>new in</li> <hr align="left">
+               <li><a href="about.html">about</a></li>
+               <li><a href="contact.html" class="active">contact</a></li>
+               <hr align="left">
+               <li><a target="_blank" href="https://facebook.com"
+                ><img src="images/icons/face.svg" class="icon"
+              /></a><a target="_blank" href="https://instagram.com">
+                <img src="images/icons/insta.svg" class="icon"
+              /></a></li>
         </ul>
       </nav>
-    </header>
+</header>
+       <!---------------------------- main content --------------------------------------->
     <main>
-      <h1>get in touch</h1>
-      <form action="form-success.php" method="GET">
-        <p>First Name <input type="text" name="first name" /></p>
-        <p>Last Name<input type="text" name="last name" /></p>
-        <p>E-mail<input type="text" name="mail" /></p>
-        <p>
-          Message
-          <textarea name="message"></textarea>
-        </p>
-        <input type="image" src="images/buttons/send.png" />
-      </form>
-    </main>
-  </body>
-  <footer>&copy; Rainy Days</footer>
+    <h1 class="contact-form">get in touch</h1>
+    <form action="form-success.php" method="GET">
+        <div class="form">
+            <label for="name">First name </label> 
+            <input type="text" name="first name" id="first-name" required/>
+        </div>
+        <div class="form">
+            <label for="name">Last name </label> 
+            <input type="text" name="last name" id="last-name" required />
+        </div>
+        <div class="form">
+            <label for="name">E-mail </label> 
+            <input type="text" name="e-mail" id="e-mail" required />
+        </div>
+        <div class="form">
+            <textarea name="message"></textarea>
+        </div>
+        <div class="submit">
+            <input type="submit" value="SEND">
+        </div>
+      
+    </form>
+  </main>
+</body>
+<footer>&copy; Rainy Days</footer>
 </html>

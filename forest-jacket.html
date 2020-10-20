@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://use.typekit.net/gzy8fgh.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <title>Home | Rainy Days</title>
+    <meta
+      name="description"
+      content="Shop rain jackets suited for all kinds of adventures"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <!-------------------------------------- header --------------------------------------------->
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="images/RainyDays_Logo.png"
+          alt="rainy days logo"
+        />
+      </a>
+      <!----------------------- top navigation / shortcut icons -------------------------------->
+      <div class="topnav">
+        <div class="favorites item"><img src="images/icons/like.png" /></div>
+        <div class="profile item"><img src="images/icons/profile.png" /></div>
+        <div class="cart item"><img src="images/icons/cart.png" href="checkout.html"/></div>
+        <div class="search item"><img src="images/icons/search.png" /></div>
+      </div>
+    </header>
+      <!------------------------------- side navigation ------------------------------------------->
+        <nav role="navigation" aria-label="main menu">
+           <ul class="navbar">
+              <li><a href="index.html">home</a></li>
+              <li><a href="womens.html"">womens</li>
+               <li><a href="mens.html" class="active">mens</a></li>
+               <li>outlet</li>
+               <li>new in</li> <hr align="left">
+               <li><a href="about.html">about</a></li>
+               <li><a href="contact.html">contact</a></li>
+               <hr align="left">
+               <li><a target="_blank" href="https://facebook.com"
+                ><img src="images/icons/face.svg" class="icon"
+              /></a><a target="_blank" href="https://instagram.com">
+                <img src="images/icons/insta.svg" class="icon"
+              /></a></li>
+        </ul>
+      </nav>
+</header>
+       <!---------------------------- main content --------------------------------------->
+    <main>
+        <span class="breadcrumb">
+            <a href="index.html" class="breadcrumb">Home ></a><a href="mens.html" class="breadcrumb"> Mens ></a> Forest Jacket
+        </span>
+        <div class="container-jacket">
+            <div class="box-2">
+                <img class="medium-square" src="images/jacket-forest.jpg">
+                <img class="thumb" src="images/jacket_1-1.jpg">
+                <img class="thumb" src="images/jacket_1-3.jpg">
+                <img class="thumb" src="images/jacket_1-2.jpg">
+            </div>
+            <div class="box-3">
+                <h2 class="forest">Forest Jacket</h2>
+                USD 54
+                <div class="favorite-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsum maiores necessitatibus deserunt tempore, ipsa saepe, 
+                    nihil quod eaque odit porro voluptatibus id. 
+                    Natus quibusdam commodi voluptatem error aspernatur. Lorem ipsum 
+                    dolor sit amet consectetur adipisicing elit. Similique, dolore!
+                </p>
+
+                <label for="color-select">Color</label>
+                <select name="color" id="color-select">
+                    <option value="">--Choose--</option>
+                    <option value="black">Black</option>
+                    <option value="olive">Olive</option>
+                    <option value="brown">Brown</option>
+                    <option value="blue">Blue</option>
+                </select>
+                <label for="size-select">Size</label>
+                <select name="size" id="size-select">
+                    <option value="">--Choose--</option>
+                    <option value="xs">X Small</option>
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">X Large</option>
+                    <option value="xxl">XX Large</option>
+                </select>
+                <button class="btn-large">add to cart</button>
+                <button class="btn-large green">buy it now</button>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>&copy; 2020 Rainy Days </footer>
+</html>

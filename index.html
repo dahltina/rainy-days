@@ -6,7 +6,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
     />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
     <title>Home | Rainy Days</title>
     <meta
       name="description"
@@ -14,6 +14,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+  <!-------------------------------------- header --------------------------------------------->
   <body>
     <header>
       <a href="index.html">
@@ -35,7 +36,7 @@
         <nav role="navigation" aria-label="main menu">
            <ul class="navbar">
               <li><a href="index.html" class="active">home</a></li>
-              <li>womens</li>
+              <li><a href="womens.html"">womens</li>
                <li><a href="mens.html">mens</a></li>
                <li>outlet</li>
                <li>new in</li> <hr align="left">
@@ -43,9 +44,9 @@
                <li><a href="contact.html">contact</a></li>
                <hr align="left">
                <li><a target="_blank" href="https://facebook.com"
-                ><img src="images/icons/face.svg" class="icon"
+                ><img src="images/icons/face.svg"
               /></a><a target="_blank" href="https://instagram.com">
-                <img src="images/icons/insta.svg" class="icon"
+                <img src="images/icons/insta.svg"
               /></a></li>
         </ul>
       </nav>
@@ -56,11 +57,11 @@
       <h1>Find your next rain jacket for any adventure</h1>
       <div class="container-1">
         <div>
-          <img src="images/shop-womens.jpg" class="img medium" alt="shop womens" />
+          <img class="img medium" src="images/shop-womens.jpg" alt="shop womens" />
           <button class="btn-large">Shop Womens</button>
         </div>
         <div>
-          <img src="images/shop-mens.jpg" class="img medium" alt="shop mens" href="mens.html" />
+          <img class="img medium" src="images/shop-mens.jpg" alt="shop mens" href="mens.html" />
           <button class="btn-large" href="mens.html">Shop Mens</button>
         </div>
       </div>
@@ -68,9 +69,7 @@
     <!---------------------------explore new collection-------------------------------------->
 
     <h2>Explore our new collection</h2>
-    <div class="container-2">
       <img class="img large" src="images/explore.jpg" alt="explore our new collection" />
-    </div>
 
       <!-----------------------------featured items-------------------------------------------->
 
@@ -94,7 +93,7 @@
           <div class="colors"><img src="images/buttons/colors3.svg" alt="available colors"></div>
           <div class="price dropped">USD 49 <s>USD 69</s></div>
         </div>
-        <div>
+        <div class="box-1">
           <img class="img small" src="images/jacket-edge.jpg" alt="edge jacket" >
           <div class="jacket-title"><h3>Edge Jacket</h3></div>
           <div class="like-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
@@ -102,7 +101,7 @@
           <div class="colors"><img src="images/buttons/colors.svg" alt="available colors"></div>
           <div class="price">USD 58</div>
         </div>
-        <div>
+        <div class="box-1">
           <img class="img small" src="images/jacket-voss.jpg" alt="voss jacket" >
           <div class="jacket-title"><h3>Voss Jacket</h3></div>
           <div class="like-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
@@ -110,7 +109,7 @@
           <div class="colors"><img src="images/buttons/colors3.svg" alt="available colors"></div>
           <div class="price">USD 59 </div>
         </div>
-        <div>
+        <div class="box-1">
           <img class="img small" src="images/jacket-explore.jpg" alt="explore jacket" >
           <div class="jacket-title"><h3>Explore Jacket</h3></div>
           <div class="like-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
@@ -119,15 +118,18 @@
           <div class="price">USD 68 </div>
         </div>
         <div class="box-1">
-          <img class="new" src="images/buttons/neww.png" alt="new item">
-          <img class="img small" src="images/jacket-forest.jpg" alt="forest jacket" >
-          <div class="jacket-title"><h3>Forest Jacket</h3></div>
+          <a href="forest-jacket.html">
+            <img class="new" src="images/buttons/neww.png" alt="new item">
+            <img class="img small" src="images/jacket-forest.jpg" alt="forest jacket">
+            <div class="jacket-title"><h3>Forest Jacket</h3></div>
+          </a>
           <div class="like-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
           <div class="rating"><img src="images/buttons/rating2.svg" alt="rating"></div>
           <div class="colors"><img src="images/buttons/colors-forest.svg" alt="available colors"></div>
           <div class="price">USD 54 </div>
+        
         </div>
-        <div>
+        <div class="box-1">
           <img class="img small" src="images/jacket-edge2.jpg" alt="edge jacket" >
           <div class="jacket-title"><h3>Edge Jacket</h3></div>
           <div class="like-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
@@ -144,7 +146,7 @@
           <div class="colors"><img src="images/buttons/colors2.svg" alt="available colors"></div>
           <div class="price dropped">USD 54 <s>USD 79</s> </div>
         </div>
-        <div>
+        <div class="box-1">
         <img class="img small" src="images/jacket-forest2.jpg" alt="forest jacket" >
         <div class="jacket-title"><h3>City Jacket</h3></div>
         <div class="like-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
@@ -156,5 +158,21 @@
       <!--end featured items-->
     </main>
   </body>
-  <footer>&copy; 2020 Rainy Days </footer>
+  <footer>
+    <section class="contact-us">
+      CONTACT US </br></br>
+      +44 355 578 904</br>
+      rainydays@mail.com</br>
+      Find a store
+    </section>
+    <section class="costumer-service">
+      Contact Us</br>
+      Ordering & payment</br>
+      Shipping</br>
+      Returns</br>
+      FAQ
+    </section>
+    &copy; 2020 Rainy Days 
+
+  </footer>
 </html>
