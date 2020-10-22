@@ -28,54 +28,57 @@
       <div class="topnav">
         <div class="favorites item"><img src="images/icons/like.png" /></div>
         <div class="profile item"><img src="images/icons/profile.png" /></div>
-        <div class="cart item"><img src="images/icons/cart.png" href="checkout.html"/></div>
+        <div class="cart item">
+          <img src="images/icons/cart.png" href="checkout.html" />
+        </div>
         <div class="search item"><img src="images/icons/search.png" /></div>
       </div>
     </header>
-      <!------------------------------- side navigation ------------------------------------------->
-        <nav role="navigation" aria-label="main menu">
-           <ul class="navbar">
-              <li><a href="index.html">home</a></li>
-              <li><a href="womens.html"">womens</li>
-               <li><a href="mens.html">mens</a></li>
-               <li>outlet</li>
-               <li>new in</li> <hr align="left">
-               <li><a href="about.html">about</a></li>
-               <li><a href="contact.html" class="active">contact</a></li>
-               <hr align="left">
-               <li><a target="_blank" href="https://facebook.com"
-                ><img src="images/icons/face.svg" class="icon"
-              /></a><a target="_blank" href="https://instagram.com">
-                <img src="images/icons/insta.svg" class="icon"
-              /></a></li>
-        </ul>
-      </nav>
-</header>
-       <!---------------------------- main content --------------------------------------->
+    <!------------------------------- side navigation ------------------------------------------->
+    <nav role="navigation" aria-label="main menu">
+      <ul class="navbar">
+        <li><a href="index.html">home</a></li>
+        <li><a href="womens.html">womens</li>
+        <li><a href="mens.html">mens</a></li>
+        <li>outlet</li>
+        <li>new in</li>
+        <div class="line-nav"></div>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html" class="active">contact</a></li>
+        <div class="line-nav"></div>
+        <li>
+          <a target="_blank" href="https://facebook.com"
+            ><img src="images/icons/face.svg" class="icon" /></a
+          ><a target="_blank" href="https://instagram.com">
+            <img src="images/icons/insta.svg" class="icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <!---------------------------- main content --------------------------------------->
     <main>
-    <h1 class="contact-form">get in touch</h1>
-    <form action="form-success.php" method="GET">
-        <div class="form">
-            <label for="name">First name </label> 
-            <input type="text" name="first name" id="first-name" required/>
+      <h1 class="h1-contact">Get in Touch</h1>
+      <div class="line"></div>
+      <form action="form-success.php" method="GET">
+        <div class="first-name">
+          <label for="first-name">First name </label>
+          <input type="text" name="first-name" id="first-name" required />
         </div>
-        <div class="form">
-            <label for="name">Last name </label> 
-            <input type="text" name="last name" id="last-name" required />
+        <div class="last-name">
+          <label for="last-name">Last name </label>
+          <input type="text" name="last-name" id="last-name" required />
         </div>
-        <div class="form">
-            <label for="name">E-mail </label> 
-            <input type="text" name="e-mail" id="e-mail" required />
+        <div class="e-mail">
+          <label for="name">E-mail </label>
+          <input type="text" name="e-mail" id="e-mail" required />
         </div>
-        <div class="form">
-            <textarea name="message"></textarea>
+        <div class="textarea">
+          <label for="textarea">Message </label>
+          <textarea name="message"></textarea>
         </div>
-        <div class="submit">
-            <input type="submit" value="SEND">
-        </div>
-      
-    </form>
-  </main>
-</body>
-<footer>&copy; Rainy Days</footer>
+        <input id="submit" type="submit" value="SEND" />
+      </form>
+    </main>
+    <footer>&copy; Rainy Days</footer>
+  </body>
 </html>

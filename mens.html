@@ -36,13 +36,14 @@
             <nav role="navigation" aria-label="main menu">
                <ul class="navbar">
                   <li><a href="index.html">home</a></li>
-                  <li><a href="womens.html"">womens</li>
+                  <li><a href="womens.html">womens</li>
                    <li><a href="mens.html" class="active">mens</a></li>
                    <li>outlet</li>
-                   <li>new in</li> <hr align="left">
+                   <li>new in</li> 
+                   <div class="line-nav"></div>
                    <li><a href="about.html">about</a></li>
                    <li><a href="contact.html">contact</a></li>
-                   <hr align="left">
+                   <div class="line-nav"></div>
                    <li><a target="_blank" href="https://facebook.com"
                     ><img src="images/icons/face.svg" class="icon"
                   /></a><a target="_blank" href="https://instagram.com">
@@ -50,10 +51,23 @@
                   /></a></li>
             </ul>
           </nav>
-    </header>
            <!---------------------------- main content --------------------------------------->
         <main>
-            <div class="container-3">
+          <span class="breadcrumb">
+            <a href="index.html" class="breadcrumb">Home ></a>
+            <b>Mens</b> 
+        </span>
+
+          <label id="sort-by" for="sort-by"></label>
+                <select name="sort-by" id="sort-by">
+                    <option value="">Sort By ↓</option>
+                    <option value="black">Best Selling</option>
+                    <option value="olive">Newest</option>
+                    <option value="brown">Price Lowest</option>
+                    <option value="blue">Price Highest</option>
+                </select>
+
+            <div class="container-3 mens">
                 <div class="box-1">
                     <img class="new" src="images/buttons/neww.png" alt="new item">
                     <img class="img small" src="images/jacket-amuse.jpg" alt="amuse jacket">
