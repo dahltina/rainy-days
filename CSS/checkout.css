@@ -1,0 +1,98 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+.container-cart {
+  display: grid;
+  grid-template-columns: repeat(6, 11%) 1fr;
+  grid-template-rows: auto;
+}
+
+.bar {
+  grid-column: span 3;
+}
+
+.h1-cart {
+  text-transform: none;
+}
+
+p {
+  justify-self: center;
+  align-self: center;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 400px;
+  grid-area: 1 / 4 / 2 / 7;
+  align-self: center;
+}
+
+/* -------information bar------- */
+.product-details {
+  grid-area: 2 / 1 / 3 / 3;
+  justify-self: start;
+}
+
+.price {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.quantity {
+  grid-area: 2 / 4 / 2 / 5;
+}
+
+.total {
+  grid-area: 2 / 5 / 3 / 6;
+}
+
+/* -----forest jacket line------- */
+
+.product-price {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.cart-line {
+  grid-area: 3 / 1 / 4 / 7;
+  height: 1px;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #969696;
+}
+
+.thumb-2 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.info {
+  grid-area: 4 / 2 / 5 / 3;
+  align-self: center;
+}
+
+.total-price {
+  grid-area: 4 / 5 / 5 / 6;
+}
+
+.x {
+  grid-area: 4 / 6 / 5 / 7;
+}
+
+/* ------login section--------- */
+.login {
+  grid-area: 1 / 7 / 8 / 8;
+  background-color: #e2e2eb;
+  padding: 5%;
+  border-radius: 2rem;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.quantity-1 {
+  grid-area: 4 / 4 / 5 / 5;
+  width: 100%;
+  align-self: center;
+}

@@ -1,4 +1,4 @@
-/* global styles including mobile*/
+/* global styles*/
 
 @font-face {
   font-family: "inter", "neue-haas-unica" sans-serif;
@@ -192,6 +192,11 @@ nav a:hover {
   width: 100%;
   max-width: 160px;
   max-height: 160px;
+}
+
+.thumb-2 {
+  width: 100%;
+  max-width: 122px;
 }
 
 /*-------index main layout----------*/
@@ -407,8 +412,7 @@ textarea:focus {
   border: none;
 }
 
-/*------------footer------------------
-  -------------------------------------*/
+/*------------footer------------------*/
 footer {
   grid-area: footer;
   background-color: var(--light-blue);
