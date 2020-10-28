@@ -56,8 +56,13 @@ h2 {
 
 h3 {
   margin-top: 5px;
+  margin-bottom: 10px;
   font-size: 1.5625rem;
   text-transform: none;
+}
+
+.box-1 a {
+  color: var(--main);
 }
 
 /*------------------header------------------
@@ -92,6 +97,14 @@ header {
 
 /*---------navigation-----------
   ------------------------------*/
+#hamburger-menu {
+  display: none;
+}
+
+.fas.fa-bars {
+  display: none;
+}
+
 nav {
   grid-area: nav;
 }
@@ -430,10 +443,10 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 10px;
     grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+      "header icons"
+      "nav nav"
+      "main main"
+      "footer footer";
   }
 
   h1 {
@@ -449,9 +462,17 @@ footer {
   }
 
   /* --------------navigation------------- */
+  .fas.fa-bars {
+    display: inherit;
+    grid-area: icons;
+  }
+
   nav {
-    grid-area: nav;
-    display: flex;
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
   }
 
   nav li {
@@ -497,10 +518,10 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 10px;
     grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+      "header icons"
+      "nav nav"
+      "main main"
+      "footer footer";
   }
 
   .logo {
@@ -509,6 +530,7 @@ footer {
 
   h1 {
     font-size: 1.2rem;
+    margin-top: 0px;
   }
 
   h2 {
@@ -521,9 +543,19 @@ footer {
   }
 
   /* ------navigation------ */
+
+  .fas.fa-bars {
+    display: inherit;
+    grid-area: icons;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
   nav {
+    display: none;
     grid-area: nav;
-    display: flex;
     margin-bottom: 20px;
   }
 
@@ -597,7 +629,7 @@ footer {
     margin-left: 2px;
   }
 
-  /* ----------footer--------- */
+  /* -------------footer----------- */
 
   footer {
     grid-area: footer;

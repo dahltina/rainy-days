@@ -126,6 +126,7 @@ p {
 .back {
   grid-area: 7 / 1 / 8 / 3;
   color: #ee9c47;
+  text-decoration: none;
 }
 
 /* ------login section--------- */
@@ -164,4 +165,26 @@ input[type="checkbox"] {
 
 form p {
   margin: 0px;
+}
+
+/*//////////////////mobile//////////////////////*/
+
+@media (min-width: 200px) and (max-width: 709px) {
+  body {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+
+  .container-cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
