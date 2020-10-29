@@ -17,6 +17,12 @@
 }
 
 body {
+  margin: 0;
+  font-family: "inter", "helvetica", sans-serif;
+  color: var(--main);
+}
+
+.body {
   display: grid;
   grid-template-columns: 15% 1fr 1fr 1fr;
   grid-gap: 10px;
@@ -24,9 +30,7 @@ body {
     "header header header header"
     "nav main main main"
     "footer footer footer footer";
-  font-family: "inter", "helvetica", sans-serif;
-  color: var(--main);
-  margin-top: 5%;
+  margin-top: 4%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -63,6 +67,12 @@ h3 {
 
 .box-1 a {
   color: var(--main);
+}
+
+.top-line {
+  width: 100%;
+  height: 10px;
+  background-color: var(--main);
 }
 
 /*------------------header------------------
@@ -182,12 +192,14 @@ nav a:hover {
   width: 100%;
   max-width: 1088px;
   max-height: 456px;
+  transition: transform 0.2s;
 }
 
 .medium {
   width: 100%;
   max-width: 1fr;
   max-height: 279px;
+  transition: transform 0.2s;
 }
 
 .medium-square {
@@ -200,6 +212,13 @@ nav a:hover {
   width: 100%;
   max-width: 343px;
   max-height: 343px;
+  transition: transform 0.2s;
+}
+
+.small:hover,
+.medium:hover,
+.large:hover {
+  transform: scale(1.03);
 }
 
 .thumb {
@@ -218,8 +237,6 @@ nav a:hover {
 main {
   grid-area: main;
 }
-
-/*FIND YOUR NEXT RAIN JACKET*/
 .container-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -228,7 +245,6 @@ main {
   justify-items: center;
 }
 
-/*FEATURED ITEMS*/
 .container-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -419,7 +435,6 @@ textarea {
 
 input[type="submit"] {
   text-decoration: none;
-  cursor: pointer;
   border-radius: 1.5rem;
   background: var(--orange);
   color: var(--white);
@@ -439,16 +454,22 @@ textarea:focus {
 /*------------footer------------------*/
 footer {
   grid-area: footer;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--light-blue);
-  padding: 30px 279px;
-  margin-top: 190px;
+  padding: 30px 150px;
+  margin-top: 100px;
+}
+
+footer p {
+  font-size: 0.7rem;
 }
 
 /*/////////////////tablets////////////////////
 -------------------------------------------- */
 
 @media (min-width: 710px) and (max-width: 1150px) {
-  body {
+  .body {
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -518,10 +539,9 @@ footer {
   }
 }
 
-/*//////////////////mobile//////////////////////
----------------------------------------------- */
+/*//////////////////mobile//////////////////////*/
 @media (min-width: 200px) and (max-width: 709px) {
-  body {
+  .body {
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -630,7 +650,7 @@ footer {
   }
 
   .btn-large {
-    padding: 0.4rem 7rem;
+    padding: 0.4rem 6rem;
     font-weight: 700;
     font-size: 0.7rem;
   }

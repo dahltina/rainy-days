@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://use.typekit.net/gzy8fgh.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/checkout.css" />
+    <title>Shopping Cart | Rainy Days</title>
+    <meta name="description" content="Shopping cart - Rainy Days" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <!-------------------------------------- header --------------------------------------------->
+  <body>
+    <div class="top-line"></div>
+    <div class="body">
+      <header>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="images/RainyDays_Logo.png"
+            alt="rainy days logo"
+          />
+        </a>
+        <!----------------------- top navigation / shortcut icons -------------------------------->
+        <div class="topnav">
+          <div class="favorites item"><img src="images/icons/like.svg" /></div>
+          <div class="profile item"><img src="images/icons/profile.svg" /></div>
+          <div class="cart item">
+            <a href="shopping-cart.html"><img src="images/icons/cart.svg" /></a>
+          </div>
+          <div class="search item"><img src="images/icons/search.svg" /></div>
+        </div>
+      </header>
+      <!---------------------------- main content --------------------------------------->
+      <main>
+        <div class="jacket-container">
+          <div class="top-bar">
+            <h1 class="h1-about">Shopping Cart</h1>
+            <img
+              class="progress-bar"
+              src="images/checkout-progress-bar.svg"
+              alt="step 1: log in or sign up"
+            />
+          </div>
+          <div class="line"></div>
+          <div class="info-line">
+            <p>Product Details</p>
+            <p>Price</p>
+            <p>Quantity</p>
+            <p>Total Price</p>
+          </div>
+
+          <div class="cart-line"></div>
+
+          <div class="jacket-specs">
+            <img
+              class="thumb-2"
+              src="images/jacket_1-1.jpg"
+              alt="Forest Jacket"
+            />
+            <div>
+              <p><b>Forest Jacket</b></p>
+              <p>Size: M</p>
+            </div>
+            <p>$54</p>
+            <img class="quantity" src="images/quantity.svg" />
+            <p>$54</p>
+            <div></div>
+          </div>
+
+          <div class="cart-line"></div>
+
+          <div class="jacket-specs">
+            <img
+              class="thumb-2"
+              src="images/jacket_2-1.jpg"
+              alt="Edge Jacket"
+            />
+            <div>
+              <p><b>Edge Jacket</b></p>
+              <p>Size: M</p>
+            </div>
+            <p>$58</p>
+            <img class="quantity" src="images/quantity.svg" />
+            <p>$58</p>
+            <div></div>
+          </div>
+          <div class="cart-line"></div>
+          <div class="sum">
+            <div></div>
+            <div>
+              <p>Total</p>
+              <p>Shipping</p>
+              <p><b>Sum Total</b></p>
+            </div>
+            <div>
+              <p>$112</p>
+              <p>$50</p>
+              <p><b>$162</b></p>
+            </div>
+          </div>
+          <a class="back" href="mens.html"><b><--Continue Shopping</b></a>
+        </div>
+
+        <section class="login">
+          <h5>Login</h5>
+          <form action="" method="">
+            <label for="user-name">User Name </label>
+            <input type="text" name="user-name" id="user-name" required />
+            <label for="password">Password </label>
+            <input type="password" name="password" id="password" required />
+            <div class="flex">
+              <input type="checkbox" name="remember-me" id="checkbox" />
+              <label for="checkbox">Remember Me</label>
+              <p><u>Forgot Password?</u></p>
+            </div>
+            <p>Don't have an account?</p>
+            <p class="signup">Sign Up</p>
+            <p>or</p>
+            <p class="signup">Continue as a Guest</p>
+            <input id="submit" type="submit" value="CONTINUE" />
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
