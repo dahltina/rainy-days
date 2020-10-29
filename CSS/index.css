@@ -75,8 +75,7 @@ h3 {
   background-color: var(--main);
 }
 
-/*------------------header------------------
-  -----------------------------------------*/
+/*---------------header--------------*/
 header {
   grid-area: header;
   display: grid;
@@ -105,8 +104,7 @@ header {
   margin: 0.5rem;
 }
 
-/*---------navigation-----------
-  ------------------------------*/
+/*---------navigation-----------*/
 #hamburger-menu {
   display: none;
 }
@@ -159,8 +157,7 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/*------buttons-----------
---------------------------*/
+/*---------buttons-----------*/
 
 .btn-large {
   border-radius: 1.5rem;
@@ -186,8 +183,7 @@ nav a:hover {
   margin-top: 15px;
 }
 
-/*--------images-----------
-  --------------------------*/
+/*--------images-----------*/
 .large {
   width: 100%;
   max-width: 1088px;
@@ -537,6 +533,15 @@ footer p {
   .price {
     font-size: 0.8rem;
   }
+
+  footer {
+    padding: 30px;
+    margin-top: 50px;
+  }
+
+  .footer-info {
+    display: none;
+  }
 }
 
 /*//////////////////mobile//////////////////////*/
@@ -692,9 +697,16 @@ footer p {
   /* -------------footer----------- */
 
   footer {
-    grid-area: footer;
-    background-color: var(--light-blue);
-    padding: 0;
+    padding: 30px;
     margin-top: 50px;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+
+  .subscribe,
+  .footer-info {
+    display: none;
   }
 }
