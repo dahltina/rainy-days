@@ -172,6 +172,11 @@ nav a:hover {
   text-decoration: none;
 }
 
+.btn-large:hover {
+  color: var(--orange);
+  background:#FFE2C4;
+}
+
 .btn-large.cart {
   display: block;
   width: 100%;
@@ -181,6 +186,11 @@ nav a:hover {
 .btn-large.green {
   background: var(--green);
   margin-top: 15px;
+}
+
+.btn-large.green:hover {
+  background: #D6F2CD;
+  color: var(--green);
 }
 
 /*--------images-----------*/
