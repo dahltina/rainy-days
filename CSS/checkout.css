@@ -60,6 +60,12 @@ main {
   color: #ee9c47;
 }
 
+.thumb-2 {
+  width: 100%;
+  max-width: 122px;
+  max-height: 122px;
+}
+
 /* login section */
 /* ------login section--------- */
 .login {
@@ -142,6 +148,7 @@ form p {
 
   .thumb-2 {
     max-width: 80px;
+    max-height: 80px;
   }
 
   p {
