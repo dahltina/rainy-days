@@ -59,22 +59,27 @@
         <main>
           <h1 class="h1-contact">Get in Touch</h1>
           <div class="line"></div>
-          <form action="form-success.php" method="GET">
+          <div id="success-message"></div>
+          <form action="form-success.php" method="GET" id="form">
             <div class="first-name">
               <label for="first-name">First name </label>
-              <input type="text" name="first-name" id="first-name" required />
+              <input type="text" name="first-name" id="first-name" >
+              <div id="firstNameError" class="formError">Please provide your first name</div>
             </div>
             <div class="last-name">
               <label for="last-name">Last name </label>
-              <input type="text" name="last-name" id="last-name" required />
+              <input type="text" name="last-name" id="last-name" />
+              <div id="lastNameError" class="formError">Please provide your last name</div>
             </div>
-            <div class="e-mail">
+            <div class="email">
               <label for="name">E-mail </label>
-              <input type="text" name="e-mail" id="e-mail" required />
+              <input type="email" name="email" id="email" />
+              <div id="emailError" class="formError">Please provide a valid email</div>
             </div>
             <div class="textarea">
               <label for="textarea">Message </label>
-              <textarea name="message"></textarea>
+              <textarea name="message" id="message"></textarea>
+              <div id="messageError" class="formError">Message must be at least 20 characters</div>
             </div>
             <input id="submit" type="submit" value="SEND" />
           </form>
@@ -111,5 +116,6 @@
             </form>
         </section> 
       </footer>
+      <script src="js/form.js"></script>
     </body>
   </html>

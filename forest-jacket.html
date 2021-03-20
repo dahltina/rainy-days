@@ -31,7 +31,9 @@
         <div class="topnav">
           <div class="favorites item"><img src="images/icons/like.svg" alt="favorites"/></div>
           <div class="profile item"><img src="images/icons/profile.svg" alt="profile"/></div>
-          <div class="cart item"><a href="checkout.html"><img src="images/icons/cart.svg" alt="shopping cart"></a></div>
+          <div class="cart item"><a href="checkout.html"><img src="images/icons/cart.svg" alt="shopping cart"></a>
+            <div id="itemsInCart" class="itemsInCart"></div>
+          </div>
           <div class="search item"><img src="images/icons/search.svg" alt="search"/></div>
         </div>
       </header>
@@ -74,14 +76,15 @@
             <h2 class="forest">Forest Jacket</h2>
             USD 54
             <div class="favorite-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
+              <ul class="jacket-specs">
+                <li>Waterproof</li>
+                <li>Windproof</li>
+                <li>Breathing material</li>
+                <li>Lightweight</li>
+              </ul>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                  Ipsum maiores necessitatibus deserunt tempore, ipsa saepe, 
-                 nihil quod eaque odit porro voluptatibus id. 
-                 Natus quibusdam commodi voluptatem error aspernatur. Lorem ipsum 
-                 dolor sit amet consectetur adipisicing elit. Similique, dolore! 
-                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                 Assumenda odio officia et obcaecati, quas eius esse perspiciatis 
-                 maiores dolorum ratione.
+                 nihil quod eaque odit porro voluptatibus id.
               </p>
               <label for="color-select">Color</label>
               <select name="color" id="color-select">
@@ -99,8 +102,11 @@
                 <option value="xl">XL</option>
                 <option value="xxl">XXL</option>
               </select>
-              <button class="btn-large cart">add to cart</button>
-              <button class="btn-large cart green">buy it now</button>
+              <button class="btn-large cart" id="add">add to cart</button>
+              <button class="btn-large cart green" id="buyNow">buy it now</button>
+              <!---------- added to cart --------------->
+              <div id="cart-add">
+              </div>
             </div>
           </main>
           </div>
@@ -135,5 +141,6 @@
             </form>
          </section>   
       </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

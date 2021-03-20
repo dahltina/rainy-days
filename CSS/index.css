@@ -8,8 +8,8 @@
 
 :root {
   --main: #0a3641;
-  --orange: #ee9c47;
-  --green: #8dba7e;
+  --orange: #FF8500;
+  --green: #4DAA46;
   --white: #ffffff;
   --light-blue: #e2e2eb;
   --gray: #969696;
@@ -33,6 +33,10 @@ body {
   margin-top: 4%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+a {
+  color: var(--main);
 }
 
 h1,
@@ -130,6 +134,7 @@ nav li {
 nav a {
   color: var(--main);
   text-decoration: none;
+  transition: 0.5s ease-in;
 }
 
 nav a:hover {
@@ -170,6 +175,7 @@ nav a:hover {
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-large:hover {
@@ -216,8 +222,6 @@ nav a:hover {
 
 .small {
   width: 100%;
-  max-width: 343px;
-  max-height: 343px;
   transition: transform 0.2s;
 }
 
@@ -228,7 +232,7 @@ nav a:hover {
 }
 
 .thumb {
-  max-width: 100%;
+  width: 100%;
   max-width: 160px;
   max-height: 160px;
 }
@@ -243,6 +247,7 @@ nav a:hover {
 main {
   grid-area: main;
 }
+
 .container-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -364,8 +369,8 @@ label[for="color-select"],
 .thumb-images {
   display: flex;
   flex-wrap: nowrap;
-  max-width: 100%;
   max-height: 160px;
+  margin-top: 30px;
 }
 
 .forest {
@@ -384,6 +389,38 @@ select {
   background-color: var(--light-blue);
   color: black;
 }
+
+ul.jacket-specs {
+  padding: 15px;
+}
+
+.addedToCart {
+  position: relative;
+  top: 10px;
+  color: var(--green);
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  transition: 0.5s ease-in;
+  border: 1px solid var(--green);
+}
+
+
+/* .itemsInCart {
+  position: relative;
+  top: 5px;
+  left: -10px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  text-align: center;
+  font-weight: bold;
+  color: var(--white); 
+} */
+
+
 
 /* -------------about------------------
 ------------------------------------- */
@@ -442,6 +479,7 @@ textarea {
 
 input[type="submit"] {
   text-decoration: none;
+  text-align: center;
   border-radius: 1.5rem;
   background: var(--orange);
   color: var(--white);
@@ -456,6 +494,20 @@ input:focus,
 textarea:focus {
   outline: 3px solid var(--orange);
   border: none;
+}
+
+/* form messages */
+
+.formError {
+  color: rgb(158, 41, 25);
+  padding-top: 5px;
+  display: none;
+}
+
+.success-message {
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 0.3rem;
 }
 
 /*------------footer------------------*/
