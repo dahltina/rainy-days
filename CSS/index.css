@@ -505,6 +505,7 @@ input[type="submit"] {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 input:focus,

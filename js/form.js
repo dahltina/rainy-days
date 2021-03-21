@@ -1,4 +1,3 @@
-"use strict"
 
 const form = document.querySelector("#form");
 const firstName = document.querySelector("#first-name");
@@ -19,9 +18,11 @@ function submitForm(event) {
     event.preventDefault();
 
     if (checkLength(firstName.value, 0) && checkLength(lastName.value, 0) && validateEmail(email.value) && checkLength(message, 19)) {
-        message.innerHTML = `<div class="success-message">Thank you! 
+        submitSuccess.innerHTML = `<div class="success-message">Thank you! 
                                 Your message has been sent and we will get back to you shortly</div>`
         form.reset();
+
+        console.log("hello");
     }
 }
 
