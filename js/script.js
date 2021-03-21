@@ -26,10 +26,21 @@ addToCartbutton.onclick = function () {
 }
 
 buyNowbutton.onclick = function () {
-    window.location.href = "checkout.html"
+    window.location.href = "checkout.html";
 }
 
 function addItemToCart() {
     counter++;
+}
 
+// checkout login form
+
+// const username = document.querySelector("#userName");
+// const usernameError = document.querySelector("#userNameError");
+// const password = document.querySelector("#password");
+// const passwordError = document.querySelector("#passwordError");
+const loginBtn = document.querySelector("#loginBtn");
+
+loginBtn.onclick = function () {
+    window.location.href = "checkout-2.html";
 }

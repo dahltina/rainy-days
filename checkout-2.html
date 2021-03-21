@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"/>
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="CSS/checkout.css" />
-    <title>Shopping Cart | Rainy Days</title>
-    <meta name="description" content="Shopping cart. Login. sign up or continue as a guest - Rainy Days"/>
+    <title>Shipping | Rainy Days</title>
+    <meta name="description" content="Shopping cart. Confirm shipping address - Rainy Days"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Hotjar Tracking Code for https://dahltina-firstproject.netlify.app/index.html -->
     <script>
@@ -40,7 +40,7 @@
         <div class="jacket-container">
           <div class="top-bar">
             <h1 class="h1-about">Shopping Cart</h1>
-            <img class="progress-bar" src="images/checkout-progress-bar.svg" alt="step 1: review shopping cart"/>
+            <img class="progress-bar" src="images/checkout2.svg" alt="step 1: review shopping cart"/>
           </div>
           <div class="line"></div>
           <div class="info-line">
@@ -94,24 +94,20 @@
         </div>
 
         <section class="login">
-          <h5>Login</h5>
+          <h5>Confirm Shipping address</h5>
           <form action="" method="GET" id="loginForm">
-            <label for="userName">User Name </label>
-            <input type="text" name="userName" id="userName" required/>
+            <label for="userName">Full name </label>
+            <input type="text" name="fullName" id="fullName" required/>
             <!-- <div class="loginError" id="userNameError">Username is incorrect</div> -->
-            <label for="password">Password </label>
-            <input type="password" name="password" id="password" required/>
+            <label for="address">Street address </label>
+            <input type="address" name="address" id="address" required/>
             <!-- <div class="loginError" id="passwordError">Password is incorrect</div> -->
-            <div class="flex">
-              <input type="checkbox" name="remember-me" id="checkbox" />
-              <label for="checkbox">Remember Me</label>
-              <p><u>Forgot Password?</u></p>
-            </div>
-            <p>Don't have an account?</p>
-            <p class="signup">Sign Up</p>
-            <p>or</p>
-            <p class="signup">Continue as a Guest</p>
-            <input id="loginBtn" type="submit" value="CONTINUE" />
+            <label for="zip">Zip </label>
+            <input type="zip" name="zip" id="zip" required/>
+            <label for="city">City </label>
+            <input type="city" name="city" id="city" required/>
+            
+            <input id="continueBtn" type="submit" value="CONTINUE" />
           </form>
         </section>
       </main>

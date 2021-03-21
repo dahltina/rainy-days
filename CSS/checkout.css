@@ -115,6 +115,13 @@ form p {
   display: none;
 }
 
+/* login error */
+
+/* .loginError {
+  color: rgb(158, 41, 25);
+  display: none;
+} */ 
+
 /*//////////////////mobile//////////////////////*/
 @media (min-width: 200px) and (max-width: 709px) {
   main {

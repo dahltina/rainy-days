@@ -54,7 +54,8 @@ h1 {
 }
 
 .h1-about,
-.h1-contact {
+.h1-contact, 
+.h2-about {
   text-transform: none;
 }
 
@@ -168,7 +169,7 @@ nav a:hover {
   border-radius: 1.5rem;
   background: var(--orange);
   color: var(--white);
-  padding: 0.6rem 3rem;
+  padding: 0.5rem 2.7rem;
   border: 0;
   text-transform: uppercase;
   text-align: center;
@@ -405,7 +406,6 @@ ul.jacket-specs {
   border: 1px solid var(--green);
 }
 
-
 /* .itemsInCart {
   position: relative;
   top: 5px;
@@ -420,7 +420,14 @@ ul.jacket-specs {
   color: var(--white); 
 } */
 
+.reviews-jacket {
+  grid-column: 1 / 3;
+  margin-bottom: 150px;
+}
 
+.review-person {
+  font-weight: bold;
+}
 
 /* -------------about------------------
 ------------------------------------- */
@@ -434,6 +441,16 @@ img.about {
   height: 10px;
   background-color: var(--main);
   margin-bottom: 20px;
+}
+
+.reviews-section {
+  margin-top: 100px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
 }
 
 /* -------------contact------------------
@@ -626,16 +643,16 @@ footer p {
   }
 
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-top: 0px;
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   h3 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-top: 2px;
   }
 
@@ -755,6 +772,11 @@ footer p {
 
   .thumb {
     max-width: 100%;
+  }
+
+  /* ----------about page-------- */
+  .reviews {
+    flex-wrap: wrap;
   }
 
   /* -------------footer----------- */
