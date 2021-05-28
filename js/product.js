@@ -2,6 +2,7 @@
 const productContainer = document.querySelector(".container-jacket");
 const breadcrumb = document.querySelector(".breadcrumb");
 const pageTitle = document.querySelector("title");
+const prevPage = document.referrer;
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -23,7 +24,7 @@ async function getProduct() {
         pageTitle.innerHTML +=  `${results.name}`;
 
         breadcrumb.innerHTML += `<a href="index.html" class="breadcrumb">Home ></a>
-                                <a href="mens.html" class="breadcrumb"> Mens ></a> <b>${results.name}</b>`
+                                <a href="${prevPage}" class="breadcrumb"> ${results.categories[0].name} ></a> <b>${results.name}</b>`
 
         productContainer.innerHTML += `<div class="box-2">
                                             <img class="medium-square" src="${results.images[0].src}" alt="${results.name}">
