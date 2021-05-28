@@ -2,7 +2,6 @@
 const baseUrl = "https://rainydays.tinadahl.no/wp-json/wc/store/products";
 // ?per_page=100
 
-
 // FEATURED PRODUCTS INDEX PAGE
 
 const featuredUrl = baseUrl + "?featured=true";
@@ -172,34 +171,3 @@ async function getOutletProducts() {
 
 getOutletProducts();
 
-
-
-
-
-// async function getProducts() {
-//     try {
-//         const response = await fetch(url);
-//         const results = await response.json();
-//         createHTML(results);
-//     }
-//     catch (error) {
-//         console.log(error);
-//     }
-// }
-
-// getProducts();
-
-// function createHTML(products) {
-//     console.log(products)
-//     products.forEach(function (product) {
-
-//         productContainer.innerHTML += `<div class="box-1">
-//                                             <img class="img small" src="${product.images[0].src}" alt="${product.name}">
-//                                             <div class="jacket-title"><h3>${product.name}</h3></div>
-//                                             <div class="like-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
-//                                             <div class="rating"><img src="images/buttons/rating.svg" alt="rating"></div>
-//                                             <div class="colors"><img src="images/buttons/colors.svg" alt="available colors"></div>
-//                                             <div class="price"> USD: ${product.prices.regular_price}</div>
-//                                         </div>`
-//     })
-// }

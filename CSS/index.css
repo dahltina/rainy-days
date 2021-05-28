@@ -202,6 +202,12 @@ nav a:hover {
   color: var(--green);
 }
 
+.btn-large.green:hover,
+.btn-large:hover {
+  transition: all 0.2s ease-in;
+}
+
+
 /*--------images-----------*/
 .large {
   width: 100%;
@@ -319,7 +325,7 @@ s {
   margin-top: 20px;
 }
 
-/* -----------jacket page------------ */
+/* -----jacket page / product page----- */
 .breadcrumb {
   font-size: 0.8rem;
 }
@@ -348,12 +354,21 @@ label[for="color-select"],
   font-size: 0.8rem;
 }
 
-.container-jacket {
+.container-jacket, .buttons {
   display: grid;
   grid-template-columns: 50% 30%;
   grid-template-rows: auto;
   grid-gap: 10%;
   margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 0;
+  grid-row-gap: 0;
+}
+
+#add, #buyNow, #cart-add {
+  grid-column: 2 / 3;
 }
 
 .box-2 {
@@ -770,7 +785,7 @@ footer p {
 
   .btn-large {
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .btn-large.one {

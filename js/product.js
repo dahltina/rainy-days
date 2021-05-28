@@ -62,9 +62,6 @@ async function getProduct() {
                                                 <option value="xl">XL</option>
                                                 <option value="xxl">XXL</option>
                                             </select>
-                                            <button class="btn-large cart" id="add">add to cart</button>
-                                            <button class="btn-large cart green" id="buyNow">buy it now</button>
-                                            <div id="cart-add">
                                         </div>
                                         </div>`
 
@@ -74,4 +71,25 @@ async function getProduct() {
     }
 }
 
-getProduct();
+
+// add to cart
+const addToCartbutton = document.querySelector("#add");
+const buyNowbutton = document.querySelector("#buyNow");
+const addedToCart = document.querySelector("#cart-add");
+
+getProduct().then(() => {
+    addToCartbutton.onclick = function () {
+        addedToCart.innerHTML = `<p>Added to cart!</p>
+                                <a href="mens.html">Keep shopping?</a>
+                                or <a href="checkout.html">Go to checkout</a>`;
+        addedToCart.classList.add("addedToCart");
+        console.log("button click");
+    }
+
+    buyNowbutton.onclick = function () {
+        window.location.href = "checkout.html";
+    }
+});
+
+
+
