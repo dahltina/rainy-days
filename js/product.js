@@ -1,6 +1,7 @@
 
 const productContainer = document.querySelector(".container-jacket");
 const breadcrumb = document.querySelector(".breadcrumb");
+const pageTitle = document.querySelector("title");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -19,6 +20,8 @@ async function getProduct() {
 
         console.log(results);
 
+        pageTitle.innerHTML +=  `${results.name}`;
+
         breadcrumb.innerHTML += `<a href="index.html" class="breadcrumb">Home ></a>
                                 <a href="mens.html" class="breadcrumb"> Mens ></a> <b>${results.name}</b>`
 
@@ -35,7 +38,7 @@ async function getProduct() {
                                         <img class="favorite-icon" src="images/icons/like.svg" alt="add to favorites">
                                         <p>USD ${results.prices.regular_price}</p>
                                         <div><img src="images/buttons/rating2.svg" alt="rating"></div>
-                                        
+
                                             <ul class="jacket-specs">
                                             <li>Waterproof</li>
                                             <li>Windproof</li>

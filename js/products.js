@@ -17,18 +17,14 @@ async function getFeaturedJackets() {
 
         for (let i = 0; i < results.length; i++) {
 
-            // if (results[i].categories[0].id === 16) {
-            //     continue;
-            // }
-
             featuredContainer.innerHTML += `<a href="product.html?id=${results[i].id}">
                                                 <div class="box-1">
                                                     <img class="img small" src="${results[i].images[0].src}" alt="${results[i].name}">
                                                     <div class="jacket-title"><h3>${results[i].name}</h3></div>
-                                                    <div class="like-icon"><img src="images/icons/like.svg" alt="add to favorites"></div>
-                                                    <div class="rating"><img src="images/buttons/rating.svg" alt="rating"></div>
+                                                    <img class="like-icon" src="images/icons/like.svg" alt="add to favorites">
+                                                    <div class="rating"><img class="rating" src="images/buttons/rating.svg" alt="rating"></div>
                                                     <div class="colors"><img src="images/buttons/colors.svg" alt="available colors"></div>
-                                                    <div class="price"> USD: ${results[i].prices.regular_price}</div>
+                                                    <div class="price">USD: ${results[i].prices.regular_price}</p></div>
                                                 </div>
                                             </a>`
         }

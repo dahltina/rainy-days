@@ -21,6 +21,7 @@ addToCartbutton.onclick = function () {
     addedToCart.classList.add("item-cart");
     itemsInCart.classList.add("itemsInCart");
     counter++;
+    console.log("button click");
     //cartContainer.style.marginRight = "0px";
     //searchContainer.style.marginLeft = "0px";
 }

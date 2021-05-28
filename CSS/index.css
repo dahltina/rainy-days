@@ -769,9 +769,8 @@ footer p {
   }
 
   .btn-large {
-    padding: 0.4rem 6rem;
     font-weight: 700;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .btn-large.one {
