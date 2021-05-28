@@ -52,7 +52,8 @@ main {
 }
 
 .quantity {
-  max-width: 100%;
+  width: 100%;
+  max-width: 100px;
 }
 
 .back {
@@ -115,12 +116,33 @@ form p {
   display: none;
 }
 
+.loginBtn {
+  margin-top: 40px;
+}
+
+.small-gray-text {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.card-details {
+  display: flex;
+}
+
+.ccv {
+  margin-left: 20px;
+}
+
+.confirmation {
+  margin-top: 50px;
+}
+
 /* login error */
 
-/* .loginError {
+.loginError {
   color: rgb(158, 41, 25);
   display: none;
-} */ 
+}
 
 /*//////////////////mobile//////////////////////*/
 @media (min-width: 200px) and (max-width: 709px) {

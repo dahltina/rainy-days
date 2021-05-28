@@ -181,9 +181,10 @@ nav a:hover {
   cursor: pointer;
 }
 
-.btn-large:hover {
-  color: var(--orange);
-  background:#FFE2C4;
+.btn-large:hover,
+.btn-large.green:hover {
+  color: var(--white);
+  background: var(--main);
 }
 
 .btn-large.cart {
@@ -195,11 +196,6 @@ nav a:hover {
 .btn-large.green {
   background: var(--green);
   margin-top: 15px;
-}
-
-.btn-large.green:hover {
-  background: #D6F2CD;
-  color: var(--green);
 }
 
 .btn-large.green:hover,

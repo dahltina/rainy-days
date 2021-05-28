@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="255" height="143" viewBox="0 0 255 143">
+  <g id="Group_634" data-name="Group 634" transform="translate(-1647 -407)">
+    <rect id="Rectangle_721" data-name="Rectangle 721" width="255" height="143" rx="4" transform="translate(1647 407)" fill="#faa5af"/>
+    <g id="Group_597" data-name="Group 597" transform="translate(369 53)">
+      <text id="_····_····_····_" data-name="···· ···· ···· " transform="translate(1293 445)" fill="#366b78" font-size="24" font-family="Inter-Bold, Inter" font-weight="700"><tspan x="0" y="0">···· ···· ···· </tspan></text>
+      <text id="_1564" data-name="1564" transform="translate(1395 441)" fill="#366b78" font-size="11" font-family="Courier"><tspan x="0" y="0">1564</tspan></text>
+    </g>
+    <text id="John_Doe" data-name="John Doe" transform="translate(1662 520)" fill="#366b78" font-size="11" font-family="Courier"><tspan x="0" y="0">John Doe</tspan></text>
+    <g id="Group_598" data-name="Group 598" transform="translate(356.125 52)">
+      <rect id="Rectangle_1552" data-name="Rectangle 1552" width="4" height="17" rx="2" transform="translate(1509.875 370)" fill="#f6cc8b"/>
+      <path id="Rectangle_1553" data-name="Rectangle 1553" d="M0,0H5A0,0,0,0,1,5,0V2A3,3,0,0,1,2,5H0A0,0,0,0,1,0,5V0A0,0,0,0,1,0,0Z" transform="translate(1514.875 382)" fill="#f6cc8b"/>
+      <path id="Rectangle_1555" data-name="Rectangle 1555" d="M0,0H5A0,0,0,0,1,5,0V2A3,3,0,0,1,2,5H0A0,0,0,0,1,0,5V0A0,0,0,0,1,0,0Z" transform="translate(1508.875 382) rotate(90)" fill="#f6cc8b"/>
+      <path id="Rectangle_1556" data-name="Rectangle 1556" d="M0,0H5A0,0,0,0,1,5,0V2A3,3,0,0,1,2,5H0A0,0,0,0,1,0,5V0A0,0,0,0,1,0,0Z" transform="translate(1508.875 375) rotate(180)" fill="#f6cc8b"/>
+      <path id="Rectangle_1557" data-name="Rectangle 1557" d="M0,0H5A0,0,0,0,1,5,0V2A3,3,0,0,1,2,5H0A0,0,0,0,1,0,5V0A0,0,0,0,1,0,0Z" transform="translate(1514.875 375) rotate(-90)" fill="#f6cc8b"/>
+      <rect id="Rectangle_1558" data-name="Rectangle 1558" width="5" height="5" transform="translate(1514.875 376)" fill="#f6cc8b"/>
+      <rect id="Rectangle_1559" data-name="Rectangle 1559" width="5" height="5" transform="translate(1503.875 376)" fill="#f6cc8b"/>
+    </g>
+    <g id="Group_602" data-name="Group 602" transform="translate(-6646.904 -1889)">
+      <circle id="Ellipse_50" data-name="Ellipse 50" cx="9.5" cy="9.5" r="9.5" transform="translate(8308.904 2307)" fill="#ee273d"/>
+      <circle id="Ellipse_51" data-name="Ellipse 51" cx="9.5" cy="9.5" r="9.5" transform="translate(8318.904 2307)" fill="#fbcd8c"/>
+    </g>
+  </g>
+</svg>

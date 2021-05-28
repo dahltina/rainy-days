@@ -29,7 +29,7 @@
         <div class="jacket-container">
           <div class="top-bar">
             <h1 class="h1-about">Shopping Cart</h1>
-            <img class="progress-bar" src="images/checkout2.svg" alt="step 1: review shopping cart"/>
+            <img class="progress-bar" src="images/components/checkout-2.svg" alt="step 2: enter shipping address"/>
           </div>
           <div class="line"></div>
           <div class="info-line">
@@ -77,7 +77,8 @@
             </div>
           </div>
           <div class="back-continue">
-            <a class="back" href="mens.html"><b><--Back to Shopping</b></a>
+            <a href="checkout.html"><b><p><--Previuos step</p></b></a>
+            <a class="back" href="index.html"><b><--Back to Shopping</b></a>
             <p class="continue"><b>Continue</b></p>
           </div>
         </div>
@@ -87,20 +88,17 @@
           <form action="" method="GET" id="loginForm">
             <label for="userName">Full name </label>
             <input type="text" name="fullName" id="fullName" required/>
-            <!-- <div class="loginError" id="userNameError">Username is incorrect</div> -->
             <label for="address">Street address </label>
             <input type="address" name="address" id="address" required/>
-            <!-- <div class="loginError" id="passwordError">Password is incorrect</div> -->
             <label for="zip">Zip </label>
             <input type="zip" name="zip" id="zip" required/>
             <label for="city">City </label>
             <input type="city" name="city" id="city" required/>
 
-            <input id="continueBtn" type="submit" value="CONTINUE" />
+            <a class="btn-large loginBtn" href="checkout-3.html">continue</a>
           </form>
         </section>
       </main>
     </div>
-    <script src="js/script.js"></script>
   </body>
 </html>
