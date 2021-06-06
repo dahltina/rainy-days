@@ -110,13 +110,22 @@ form p {
 
 .flex {
   display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.login p,
+.login a {
+  margin: auto;
+  margin-bottom: 5px;
 }
 
 .continue {
   display: none;
 }
 
-.loginBtn {
+.login .loginBtn {
+  margin: inherit;
   margin-top: 40px;
 }
 
@@ -125,8 +134,14 @@ form p {
   font-size: 14px;
 }
 
+.card-name,
+#signupBtn {
+  margin-top: 20px;
+}
+
 .card-details {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .ccv {
